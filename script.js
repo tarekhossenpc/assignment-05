@@ -13,12 +13,12 @@ const callbtns = document.getElementsByClassName("call-btns")
 for(const callbtn of callbtns){
   callbtn.addEventListener("click",function(){
     if(coinbtn.innerText>=20){
-        alert("national")
+        alert("Calling National Emergency Number 999")
     const coin = parseInt(document.getElementById("coinbtn").innerText)
     document.getElementById("coinbtn").innerText = coin - 20
     }
     else{
-        alert("You have no sufficient coin for call. ")
+        alert("You have no sufficient coin for call")
         document.getElementById("coinbtn").innerText=0
         
     }
